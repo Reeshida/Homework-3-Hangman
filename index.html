@@ -3,28 +3,21 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Math Hangman</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="game.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href=".assets/css.style.jss" /> -->
+    <script src="./assets/javascript/game.js"></script>
 </head>
-<body>
-    <h1> Math Word Hangman</h1>
+<body onload="startUp()">
+    <h1>Welcome to Math Hangman! </h1>
+    <p>Guess a Letter</p>
+    <p>You have 10 Clicks</p>
+<p>Try to guess which MATH word I am thinking of...</p>
+<input id="letter" type="text">
+<input type="button" value="Letter" onClick="Letter()"/>
 
-// Pick a random word
-
-While the word has not been guessed {show the player their current progress 
-                                    Get a guess from the player
-If the player wants to quit the game{Quit the game}
-Else If the guess is not a single letter{
-    Tell the player to pick a single letter}
-Else{ 
-    If the guess is in the word{
-        Update the player's progress with the guess
-     } 
-    }
-}
-
-Congratulate the player on guessing the word!
+<p id = "answer"></p>
+<p id ="counter"></p>
+<p id = "Stat"></p>
 </body>
 </html>
